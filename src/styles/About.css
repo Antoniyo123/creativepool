@@ -1,0 +1,82 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+}
+.hero-year{
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.about h3{
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-number {
+    letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-left p{
+    letter-spacing: 2px;
+}
+.stat-label {
+  color: #666;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    color: #666;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

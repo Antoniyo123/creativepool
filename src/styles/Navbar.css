@@ -1,0 +1,53 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar-scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 4rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
