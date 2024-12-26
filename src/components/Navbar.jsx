@@ -14,7 +14,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
+    <div className='navbar-container'>
+            <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <h1 className="navbar-logo">CreativePool</h1>
       <div className="navbar-links">
         <a href="#" className="nav-link">Home</a>
@@ -23,6 +24,8 @@ const Navbar = () => {
         <a href="#" className="nav-link">Contact</a>
       </div>
     </nav>
+    </div>
+
   );
 };
 

@@ -1,4 +1,12 @@
+.navbar-container{
+    width: 100%;
+    max-width: 1400px;
+    
+}
 .navbar {
+    /* max-width: 1400px; */
+margin: 0 auto;
+    text-transform: uppercase;
     position: fixed;
     top: 0;
     left: 0;
@@ -6,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     transition: all 0.3s ease;
     z-index: 1000;
     font-family: Arial, sans-serif;

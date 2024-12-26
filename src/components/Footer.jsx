@@ -23,7 +23,7 @@ const Footer = () => {
             <p>DKI JAKARTA</p>
           </div>
           <div className="logo">
-            <h2>CreativePool</h2>
+            <h2>CreativeVision</h2>
           </div>
         </div>
 
