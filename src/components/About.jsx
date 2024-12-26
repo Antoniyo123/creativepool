@@ -2,41 +2,45 @@ import React from 'react';
 import '../styles/About.css';
 
 const About = () => {
-    const stats = [
-      { number: '10+', label: 'Years Experience' },
-      { number: '250+', label: 'Projects Completed' },
-      { number: '40+', label: 'Team Members' },
-      { number: '15+', label: 'Awards Won' }
-    ];
-  
-    return (
-      <section className="about">
-        <h3 className="section-title">ABOUT</h3>
+  return (
+    <div className="about-section">
+      <div className="about-container">
+        {/* Left side - Image */}
+        <div className="about-image-container">
+          <img 
+            src={require('../img/about2.jpg')} 
+            alt="Creative impact" 
+            className="main-image"
+          />
+        </div>
+        
+        {/* Right side - Content */}
         <div className="about-content">
-          <div className="about-left">
-            <div className="about-logo">
-              <div className="logo-circle outer"></div>
-              <div className="logo-circle inner"></div>
+          <div className="text-content">
+            <h1 className="heading">
+              MAKING AN <span className="bold">IMPACT</span><br />
+              THROUGH <span className="bold">SOCIAL</span><br />
+              MEDIA & ADVERTISING<br />
+              PLATFORMS
+            </h1>
+            
+            <div className="subheading">
+              Scenester williamsburg small batch<br />
+              viral typewriter blog
             </div>
-            <p className="about-text">
-              A creative studio focused on building exceptional digital experiences 
-              and brand identities. Now serving clients worldwide with innovative solutions.
-            </p>
-            <div className="about-stats">
-              {stats.map((stat, index) => (
-                <div key={index} className="stat-item">
-                  <span className="stat-number">{stat.number}</span>
-                  <span className="stat-label">{stat.label}</span>
-                </div>
-              ))}
+            
+            <div className="description">
+              Scenester williamsburg small batch viral typewriter blog schlitz 
+              skateboard squid XOXO four loko. Hoodie intelligentsia affogato 
+              salvia photo booth literally sriracha four dollar toast coloring book 
+              typewriter tumblrsexual cardigan. Brunch cornhole small batch 
+              poutine asymmetrical mixtape.
             </div>
-          </div>
-          <div className="about-right">
-            <img src={require('../img/about2.jpg')} alt="Team at work" className="about-image" />
           </div>
         </div>
-      </section>
-    );
-  };
+      </div>
+    </div>
+  );
+};
 
 export default About;
