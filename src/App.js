@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Featured from './components/Featured';
 import './App.css';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Services />
       <Featured />
+      <Footer/>
     </div>
   );
 };
